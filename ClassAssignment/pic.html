@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Watermark</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-family: "Times New Roman", serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+
+        .text {
+            position: absolute;
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            z-index: 1;
+        }
+
+        .topleft {
+            top: 8px;
+            left: 10px;
+        }
+
+        .topcenter {
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .topright {
+            top: 8px;
+            right: 10px;
+        }
+
+        .centerleft {
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .centerright {
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .bottomleft {
+            bottom: 8px;
+            left: 10px;
+        }
+
+        .bottomcenter {
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottomright {
+            bottom: 8px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="mypic.jpeg" alt="Girl's photograph">
+
+        <div class="text topleft">Aryan</div>
+        <div class="text topcenter">Aryan</div>
+        <div class="text topright">Aryan</div>
+
+        <div class="text centerleft">Aryan</div>
+        <div class="text center">Aryan</div>
+        <div class="text centerright">Aryan</div>
+
+        <div class="text bottomleft">Aryan</div>
+        <div class="text bottomcenter">Aryan</div>
+        <div class="text bottomright">Aryan</div>
+
+    </div>
+
+</body>
+</html>
